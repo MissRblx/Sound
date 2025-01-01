@@ -1,0 +1,340 @@
+--head
+local assetId = 92877734802613 
+local soundId = "rbxassetid://0" -- Sound ID (replace if needed)
+
+-- Load the rightcursefisteffect (Folder)
+local rightcursefisteffect = game:GetObjects("rbxassetid://" .. assetId)[1]
+
+-- Create and play sound
+local sound = Instance.new("Sound")
+sound.SoundId = soundId
+sound.Parent = character
+sound:Play()
+
+-- Ensure the rightcursefisteffect was loaded properly
+if rightcursefisteffect then
+    local character = game.Players.LocalPlayer.Character
+    if character then
+        -- Wait for character parts to be loaded
+        local head = character:WaitForChild("Head")
+
+        if head then
+            -- Parent the rightcursefisteffect to the workspace
+            rightcursefisteffect.Parent = character
+
+            -- Iterate through all parts in the folder and position them
+            for _, part in pairs(rightcursefisteffect:GetDescendants()) do
+                if part:IsA("BasePart") then
+                    -- Position the part relative to the right arm
+                    part.Position = head.Position + Vector3.new(0, 0, 0) -- Adjust offset if necessary
+                    part.CanCollide = false -- Disable collision
+                    part.Anchored = false    -- Anchor parts to keep them in place
+
+                    -- Create a weld for each part
+                    local weld = Instance.new("Weld")
+                    weld.Part0 = head -- The part you're welding to
+                    weld.Part1 = part -- The part you're welding
+                    weld.C0 = CFrame.new(0, 0.4, 0.08) * CFrame.Angles(0, 0, 0)
+                    weld.Parent = part -- Parent the weld to the part being welded
+                end
+            end
+        end
+    end
+end
+
+local head = game.Players.LocalPlayer.Character.Head
+head.Transparency = 1
+
+
+--right
+
+local assetId = 132682878581676 
+local soundId = "rbxassetid://0" -- Sound ID (replace if needed)
+
+-- Load the rightcursefisteffect (Folder)
+local rightcursefisteffect = game:GetObjects("rbxassetid://" .. assetId)[1]
+
+-- Create and play sound
+local sound = Instance.new("Sound")
+sound.SoundId = soundId
+sound.Parent = game.Workspace
+sound:Play()
+
+-- Ensure the rightcursefisteffect was loaded properly
+if rightcursefisteffect then
+    local character = game.Players.LocalPlayer.Character
+    if character then
+        -- Wait for character parts to be loaded
+        local rightArm = character:WaitForChild("Right Arm")
+
+        if rightArm then
+            -- Parent the rightcursefisteffect to the workspace
+            rightcursefisteffect.Parent = workspace
+
+            -- Iterate through all parts in the folder and position them
+            for _, part in pairs(rightcursefisteffect:GetDescendants()) do
+                if part:IsA("BasePart") then
+                    -- Position the part relative to the right arm
+                    part.Position = rightArm.Position + Vector3.new(0, 0, 0) -- Adjust offset if necessary
+                    part.CanCollide = false -- Disable collision
+                    part.Anchored = false    -- Anchor parts to keep them in place
+
+                    -- Create a weld for each part
+                    local weld = Instance.new("Weld")
+                    weld.Part0 = rightArm -- The part you're welding to
+                    weld.Part1 = part -- The part you're welding
+                    weld.C0 = CFrame.new(0, 0, 0) * CFrame.Angles(0, 0, 0)
+                    weld.Parent = part -- Parent the weld to the part being welded
+                end
+            end
+        end
+    end
+end
+
+--left
+
+local assetId = 96621751361252 
+local soundId = "rbxassetid://0" -- Sound ID (replace if needed)
+
+-- Load the leftcursefisteffect (Folder)
+local leftcursefisteffect = game:GetObjects("rbxassetid://" .. assetId)[1]
+
+-- Create and play sound
+local sound = Instance.new("Sound")
+sound.SoundId = soundId
+sound.Parent = game.Workspace
+sound:Play()
+
+-- Ensure the leftcursefisteffect was loaded properly
+if leftcursefisteffect then
+    local character = game.Players.LocalPlayer.Character
+    if character then
+        -- Wait for character parts to be loaded
+        local leftArm = character:WaitForChild("Left Arm")
+
+        if leftArm then
+            -- Parent the leftcursefisteffect to the workspace
+            leftcursefisteffect.Parent = workspace
+
+            -- Iterate through all parts in the folder and position them
+            for _, part in pairs(leftcursefisteffect:GetDescendants()) do
+                if part:IsA("BasePart") then
+                    -- Position the part relative to the right arm
+                    part.Position = leftArm.Position + Vector3.new(0, 0, 0) -- Adjust offset if necessary
+                    part.CanCollide = false -- Disable collision
+                    part.Anchored = false    -- Anchor parts to keep them in place
+
+                    -- Create a weld for each part
+                    local weld = Instance.new("Weld")
+                    weld.Part0 = leftArm -- The part you're welding to
+                    weld.Part1 = part -- The part you're welding
+                    weld.C0 = CFrame.new(0, 0, 0) * CFrame.Angles(0, 0, 0)
+                    weld.Parent = part -- Parent the weld to the part being welded
+                end
+            end
+        end
+    end
+end
+
+local Larm = game.Players.LocalPlayer.Character["Left Arm"]
+Larm.Transparency = 1
+local Rarm = game.Players.LocalPlayer.Character["Right Arm"]
+Rarm.Transparency = 1
+
+--torso
+local assetId = 76214403831075 
+local soundId = "rbxassetid://0" -- Sound ID (replace if needed)
+
+-- Load the rightcursefisteffect (Folder)
+local rightcursefisteffect = game:GetObjects("rbxassetid://" .. assetId)[1]
+
+-- Create and play sound
+local sound = Instance.new("Sound")
+sound.SoundId = soundId
+sound.Parent = character
+sound:Play()
+
+-- Ensure the rightcursefisteffect was loaded properly
+if rightcursefisteffect then
+    local character = game.Players.LocalPlayer.Character
+    if character then
+        -- Wait for character parts to be loaded
+        local rightArm = character:WaitForChild("Torso")
+
+        if rightArm then
+            -- Parent the rightcursefisteffect to the workspace
+            rightcursefisteffect.Parent = character
+
+            -- Iterate through all parts in the folder and position them
+            for _, part in pairs(rightcursefisteffect:GetDescendants()) do
+                if part:IsA("BasePart") then
+                    -- Position the part relative to the right arm
+                    part.Position = rightArm.Position + Vector3.new(0, 0, 0) -- Adjust offset if necessary
+                    part.CanCollide = false -- Disable collision
+                    part.Anchored = false    -- Anchor parts to keep them in place
+
+                    -- Create a weld for each part
+                    local weld = Instance.new("Weld")
+                    weld.Part0 = rightArm -- The part you're welding to
+                    weld.Part1 = part -- The part you're welding
+                    weld.C0 = CFrame.new(0, 0, 0) * CFrame.Angles(0, 0, 0)
+                    weld.Parent = part -- Parent the weld to the part being welded
+                end
+            end
+        end
+    end
+end
+
+--torsocoat
+local assetId = 72616632482669 
+local soundId = "rbxassetid://0" -- Sound ID (replace if needed)
+
+-- Load the rightcursefisteffect (Folder)
+local rightcursefisteffect = game:GetObjects("rbxassetid://" .. assetId)[1]
+
+-- Create and play sound
+local sound = Instance.new("Sound")
+sound.SoundId = soundId
+sound.Parent = character
+sound:Play()
+
+-- Ensure the rightcursefisteffect was loaded properly
+if rightcursefisteffect then
+    local character = game.Players.LocalPlayer.Character
+    if character then
+        -- Wait for character parts to be loaded
+        local rightArm = character:WaitForChild("Torso")
+
+        if rightArm then
+            -- Parent the rightcursefisteffect to the workspace
+            rightcursefisteffect.Parent = character
+
+            -- Iterate through all parts in the folder and position them
+            for _, part in pairs(rightcursefisteffect:GetDescendants()) do
+                if part:IsA("BasePart") then
+                    -- Position the part relative to the right arm
+                    part.Position = rightArm.Position + Vector3.new(0, 0, 0) -- Adjust offset if necessary
+                    part.CanCollide = false -- Disable collision
+                    part.Anchored = false    -- Anchor parts to keep them in place
+
+                    -- Create a weld for each part
+                    local weld = Instance.new("Weld")
+                    weld.Part0 = rightArm -- The part you're welding to
+                    weld.Part1 = part -- The part you're welding
+                    weld.C0 = CFrame.new(0, -0.7, 0.1) * CFrame.Angles(0, 0, 0)
+                    weld.Parent = part -- Parent the weld to the part being welded
+                end
+            end
+        end
+    end
+end
+
+local torso = game.Players.LocalPlayer.Character.Torso
+torso.Transparency = 1
+
+--rightcoat
+
+local assetId = 100511881387340 
+local soundId = "rbxassetid://0" -- Sound ID (replace if needed)
+
+-- Load the rightcursefisteffect (Folder)
+local rightcursefisteffect = game:GetObjects("rbxassetid://" .. assetId)[1]
+
+-- Create and play sound
+local sound = Instance.new("Sound")
+sound.SoundId = soundId
+sound.Parent = game.Workspace
+sound:Play()
+
+-- Ensure the rightcursefisteffect was loaded properly
+if rightcursefisteffect then
+    local character = game.Players.LocalPlayer.Character
+    if character then
+        -- Wait for character parts to be loaded
+        local rightArm = character:WaitForChild("Right Arm")
+
+        if rightArm then
+            -- Parent the rightcursefisteffect to the workspace
+            rightcursefisteffect.Parent = workspace
+
+            -- Iterate through all parts in the folder and position them
+            for _, part in pairs(rightcursefisteffect:GetDescendants()) do
+                if part:IsA("BasePart") then
+                    -- Position the part relative to the right arm
+                    part.Position = rightArm.Position + Vector3.new(0, 0, 0) -- Adjust offset if necessary
+                    part.CanCollide = false -- Disable collision
+                    part.Anchored = false    -- Anchor parts to keep them in place
+
+                    -- Create a weld for each part
+                    local weld = Instance.new("Weld")
+                    weld.Part0 = rightArm -- The part you're welding to
+                    weld.Part1 = part -- The part you're welding
+                    weld.C0 = CFrame.new(0, 0.22, 0) * CFrame.Angles(0, 0, 0)
+                    weld.Parent = part -- Parent the weld to the part being welded
+                end
+            end
+        end
+    end
+end
+
+--leftcoat
+
+local assetId = 119455967462955 
+local soundId = "rbxassetid://0" -- Sound ID (replace if needed)
+
+-- Load the leftcursefisteffect (Folder)
+local leftcursefisteffect = game:GetObjects("rbxassetid://" .. assetId)[1]
+
+-- Create and play sound
+local sound = Instance.new("Sound")
+sound.SoundId = soundId
+sound.Parent = game.Workspace
+sound:Play()
+
+-- Ensure the leftcursefisteffect was loaded properly
+if leftcursefisteffect then
+    local character = game.Players.LocalPlayer.Character
+    if character then
+        -- Wait for character parts to be loaded
+        local leftArm = character:WaitForChild("Left Arm")
+
+        if leftArm then
+            -- Parent the leftcursefisteffect to the workspace
+            leftcursefisteffect.Parent = workspace
+
+            -- Iterate through all parts in the folder and position them
+            for _, part in pairs(leftcursefisteffect:GetDescendants()) do
+                if part:IsA("BasePart") then
+                    -- Position the part relative to the right arm
+                    part.Position = leftArm.Position + Vector3.new(0, 0, 0) -- Adjust offset if necessary
+                    part.CanCollide = false -- Disable collision
+                    part.Anchored = false    -- Anchor parts to keep them in place
+
+                    -- Create a weld for each part
+                    local weld = Instance.new("Weld")
+                    weld.Part0 = leftArm -- The part you're welding to
+                    weld.Part1 = part -- The part you're welding
+                    weld.C0 = CFrame.new(0, 0.22, 0) * CFrame.Angles(0, 0, 0)
+                    weld.Parent = part -- Parent the weld to the part being welded
+                end
+            end
+        end
+    end
+end
+
+local char = game.Players.LocalPlayer.Character
+
+pcall(function() char.Pants:Destroy() end)
+local v = Instance.new("Pants")
+v.Parent = char
+v.PantsTemplate = 'rbxassetid://18734057626'
+v.Name = 'Pants'
+pcall(function() char.Shirt:Destroy() end)
+local v = Instance.new("Shirt")
+v.Parent = char
+v.ShirtTemplate = 'rbxassetid://0'
+v.Name = 'Shirt'
+pcall(function() char['Shirt Graphic']:Destroy() end)
+local v = Instance.new("ShirtGraphic")
+v.Graphic = 'rbxassetid://0'
+v.Name = 'Shirt Graphic'
