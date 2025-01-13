@@ -1,54 +1,6 @@
---head
-local assetId = 92877734802613 
-local soundId = "rbxassetid://0" -- Sound ID (replace if needed)
-
--- Load the rightcursefisteffect (Folder)
-local rightcursefisteffect = game:GetObjects("rbxassetid://" .. assetId)[1]
-
--- Create and play sound
-local sound = Instance.new("Sound")
-sound.SoundId = soundId
-sound.Parent = character
-sound:Play()
-
--- Ensure the rightcursefisteffect was loaded properly
-if rightcursefisteffect then
-    local character = game.Players.LocalPlayer.Character
-    if character then
-        -- Wait for character parts to be loaded
-        local head = character:WaitForChild("Head")
-
-        if head then
-            -- Parent the rightcursefisteffect to the workspace
-            rightcursefisteffect.Parent = character
-
-            -- Iterate through all parts in the folder and position them
-            for _, part in pairs(rightcursefisteffect:GetDescendants()) do
-                if part:IsA("BasePart") then
-                    -- Position the part relative to the right arm
-                    part.Position = head.Position + Vector3.new(0, 0, 0) -- Adjust offset if necessary
-                    part.CanCollide = false -- Disable collision
-                    part.Anchored = false    -- Anchor parts to keep them in place
-
-                    -- Create a weld for each part
-                    local weld = Instance.new("Weld")
-                    weld.Part0 = head -- The part you're welding to
-                    weld.Part1 = part -- The part you're welding
-                    weld.C0 = CFrame.new(0, 0.4, 0.08) * CFrame.Angles(0, 0, 0)
-                    weld.Parent = part -- Parent the weld to the part being welded
-                end
-            end
-        end
-    end
-end
-
-local head = game.Players.LocalPlayer.Character.Head
-head.Transparency = 1
-
-
 --right
 
-local assetId = 132682878581676 
+local assetId = 111084066172882 
 local soundId = "rbxassetid://0" -- Sound ID (replace if needed)
 
 -- Load the rightcursefisteffect (Folder)
@@ -93,7 +45,7 @@ end
 
 --left
 
-local assetId = 96621751361252 
+local assetId = 115635628862990 
 local soundId = "rbxassetid://0" -- Sound ID (replace if needed)
 
 -- Load the leftcursefisteffect (Folder)
@@ -142,7 +94,7 @@ local Rarm = game.Players.LocalPlayer.Character["Right Arm"]
 Rarm.Transparency = 1
 
 --torso
-local assetId = 76214403831075 
+local assetId = 112829709356941 
 local soundId = "rbxassetid://0" -- Sound ID (replace if needed)
 
 -- Load the rightcursefisteffect (Folder)
@@ -186,7 +138,7 @@ if rightcursefisteffect then
 end
 
 --torsocoat
-local assetId = 72616632482669 
+local assetId = 76776972069288 
 local soundId = "rbxassetid://0" -- Sound ID (replace if needed)
 
 -- Load the rightcursefisteffect (Folder)
@@ -234,7 +186,7 @@ torso.Transparency = 1
 
 --rightcoat
 
-local assetId = 100511881387340 
+local assetId = 131847217924324 
 local soundId = "rbxassetid://0" -- Sound ID (replace if needed)
 
 -- Load the rightcursefisteffect (Folder)
@@ -279,7 +231,7 @@ end
 
 --leftcoat
 
-local assetId = 119455967462955 
+local assetId = 95235423579757 
 local soundId = "rbxassetid://0" -- Sound ID (replace if needed)
 
 -- Load the leftcursefisteffect (Folder)
